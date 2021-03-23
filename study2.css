@@ -1,0 +1,369 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	width: 1700px;
+	margin: auto;
+    /* text-align: center; */
+}
+.header {
+	background-color: #f1f1f1;
+	padding: 0px;
+	margin : 0px;
+}
+.header img {
+	width: 24px;
+	height: 24px;
+}
+table{
+	width: 1700px;
+}
+.menu{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu ul li{
+	display: inline-block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.search{
+	
+	/* background-color: #dfe3eb; */
+	/* border-radius: 30px; */
+	color: rgb(24, 22, 22);
+	font-size: 30px;
+	/* cursor: pointer; */
+
+	
+}
+.button{
+padding: 20px 40px;
+border-radius: 50px;
+border: none;
+background-color: #dfe3eb;
+}
+.button:focus{
+	outline: none;
+}
+
+.slice{
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+}
+.slice .left{
+	color: white;
+	position: absolute;
+	left: 15px;
+	top: 50px
+}
+.slice .left h2{
+	color:white ;
+	font-size: 40px;
+	
+}
+
+.left p{
+	color: white;
+	margin-top: 20px;
+	left: 15px;
+	text-align: left;
+	font-size: 20px;
+}
+.btn{
+	padding: 15px 55px;
+	background-color: white;
+	border-radius: 30px;
+	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+}
+.btn:hover{
+	background-color: #464444;
+}
+.trending{
+	text-align: left;
+	font-size: 50px;
+}
+.layer1{
+	background: url("images2/nike-just-do-it (1).jpg")no-repeat center center/cover;
+}
+.layer2{
+	background: url("images2/nike-just-do-it.jpg")no-repeat center center/cover;
+}
+
+.layer1,.layer2{
+	width: 49%;
+	height: 700px;
+	font-size: 30px;
+	color: white;
+	display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.content{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.left1{
+	padding: 40px;
+}
+.featured {
+	text-align: left;
+	font-size: 50px;
+}
+.layer3 {
+	background: url("images2/nike-just-do-it (2).jpg")no-repeat center center/cover;
+	width: 100%;
+	height: 590px;
+	display: flex;
+    justify-content: end;
+    align-items: flex-end;
+	position: relative;
+}
+.content1{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.btn1,.btn2{
+	padding: 15px 55px;
+	background-color: black;
+	border-radius: 30px;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+}
+.btn1:hover,.btn2:hover{
+	background-color:rgb(63, 60, 60);
+}
+.btn1:focus,.btn2:focus{
+	outline: none;
+}
+.left2{
+	max-width: 700px;
+	position: absolute;
+	top: 30px;
+	text-align: left !important;
+	font-size: 20px;
+}
+
+.left2 h2{
+	text-align: left;
+}
+.best {
+	text-align: left;
+	font-size: 50px;
+}
+.column {
+	float: left;
+	width: 20%;
+	padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+.ten{
+	font-size: 20px;
+}
+.morenike{
+	text-align: left;
+	font-size: 50px;
+}
+.column1 {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	
+	position: relative;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row1::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.btn3{
+	position: absolute;
+	padding: 15px 55px;
+	background-color: white;
+	border-radius: 30px;
+	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+	bottom: 50px;
+	left: 20px;
+}
+.btn3:hover{
+	background-color: rgb(219, 213, 213);
+}
+.dontmiss{
+	text-align: left;
+	font-size: 50px;
+}
+.layer4{
+	background: url("images2/miss1.jpg")no-repeat center center/cover;
+}
+.layer5{
+	background: url("images2/miss2.jpg")no-repeat center center/cover;
+}
+.layer6{
+	background: url("images2/miss3.jpg")no-repeat center center/cover;
+}
+.layer4,.layer5,.layer6{
+	width: 33%;
+	height: 700px;
+	font-size: 30px;
+	display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.layer4,.layer6{
+	color: white;
+}
+.banner{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.bannerLeft{
+	padding: 40px;
+}
+.btn4{
+	padding: 15px 55px;
+	background-color: white;
+	border-radius: 30px;
+	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+}
+.btn5{
+	padding: 15px 55px;
+	background-color: black;
+	border-radius: 30px;
+	color:white;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+
+}
+.btn4:hover{
+	background-color:rgb(231, 227, 227) ;
+}
+.btn5:hover{
+	background-color:rgba(36, 32, 32, 0) ;
+}
+.footer{
+
+	margin: 0;
+	padding: 20px;
+}
+.footerBetween{
+	max-width: 1200px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 300px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+.footerBetween h4{
+	font-size: 30PX;
+}
+
+.footerBetween ul li{
+	margin: 20px 0;
+	display: grid;
+	font-size: 25px;
+	color: gray;
+	/* padding: 10px 20px; */
+
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/* .layer1{
+	float: left;
+  width: 50%;
+  padding: 15px;
+}
+.layer2{
+	float: right;
+	width: 50%;
+}
+.layer1 img,.layer2 img{
+	height: 590px;
+	width: 590px;
+}
+.layer1 img{
+	margin-right: 10px;
+}
+.layer2 img{
+	margin-left: 10px;
+}
+.layer1{
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+}
+.layer1 .left1{
+	color: white;
+	position: absolute;
+	left: 15px;
+	top: 450px
+}
+
+.layer1 .left1 p{
+	color: white;
+	margin-top: 20px;
+	left: 15px;
+}
+.layer2{
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+}
+.layer2 .left1{
+	color: white;
+	position: absolute;
+	left: 35px;
+	top: 450px
+}
+
+.layer2 .left1 p{
+	color: white;
+	margin-top: 20px;
+	left: 15px;
+} */
