@@ -7,24 +7,25 @@ body{
 	width: 100%;
 }
 .container{
-	width: 1700px;
+	width: 1400px;
 	margin: auto;
     /* text-align: center; */
 }
 .header {
-	width: 100%;
+	max-width: 100%;
 	background-color: #f1f1f1;
 	padding: 0px;
 	margin : 0px;
 }
+
 .header img {
 	width: 24px;
 	height: 24px;
 	cursor: pointer;
 }
 table{
-	margin-left: 100px ;
-	width: 1700px;
+	margin-left: 50px;
+	width: 1400px;
 }
 table  tr td {
 	cursor: pointer;
@@ -77,6 +78,117 @@ a{
 
 	
 }
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* .mySlides fade img {
+
+    height:  600px;
+} */
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    height: 900px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container img{
+	width: 1400px;
+    height: 600px;
+    object-fit: cover;
+}
+.header-slider-img{
+	height: 900px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 .button{
 padding: 20px 40px;
 border-radius: 50px;
@@ -86,7 +198,9 @@ background-color: #dfe3eb;
 .button:focus{
 	outline: none;
 }
-
+/* .slice img{
+	width: 1400px;
+}
 .slice{
 	text-align: center;
 	margin-top: 30px;
@@ -111,7 +225,7 @@ background-color: #dfe3eb;
 	left: 15px;
 	text-align: left;
 	font-size: 20px;
-}
+} */
 .btn{
 	padding: 15px 55px;
 	background-color: white;
@@ -192,7 +306,7 @@ background-color: #dfe3eb;
 	outline: none;
 }
 .left2{
-	max-width: 800px;
+	max-width: 650px;
 	position: absolute;
 	top: 30px;
 	text-align: left !important;
@@ -206,16 +320,24 @@ background-color: #dfe3eb;
 	text-align: left;
 	font-size: 50px;
 }
+
 .column {
 	float: left;
 	width: 20%;
 	padding: 5px;
 	cursor: pointer;
+	overflow: hidden;
   }
 .column:hover{
-	transform: scale(1.3);
-	/* padding: 40px; */
+	transform: scale(1.1);
+	transition: 0.5s;
 }
+/* .column:hover img{
+	transform: scale(1.3);
+	transition: 0.5s;
+	overflow: hidden;
+	/* padding: 40px; */
+
   /* Clearfix (clear floats) */
   .row::after {
 	content: "";
@@ -223,7 +345,33 @@ background-color: #dfe3eb;
 	display: table;
   }
 .ten{
-	font-size: 20px;
+	font-size: 15px;
+}
+/* .mua button {
+	margin: auto;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(241, 219, 219);
+} */
+.btnBuy{
+	padding: 15px;
+	background-color: black;
+	border-radius: 30px;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	margin: 65px;
+	display: flex;
+	justify-content: center;
+	float: left;
+	width: 150px;
+	margin-top: 30px;
+}
+.btnBuy:hover{
+	background-color: rgb(63, 60, 60);
 }
 .morenike{
 	text-align: left;
@@ -328,12 +476,9 @@ background-color: #dfe3eb;
 }
 .footerBetween{
 	max-width: 1200px;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	margin-left: 300px;
-	text-align: left;
+	margin: 30px 150px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	cursor: pointer;
 }
 .footerBetween h4{
@@ -363,6 +508,7 @@ background-color: #dfe3eb;
 	max-width: 800px;
 	margin-top: 30px;
 	margin-bottom: 50px;
+	margin-left: 50px;
 	text-align: left;
 	display: flex;
 	justify-content: space-between;
@@ -417,6 +563,7 @@ background-color: #dfe3eb;
 }
 .end1{
 	max-width: 400px;
+	margin-left: 40px;
 	cursor: pointer;
 }
 .theEnd ul{
@@ -432,6 +579,7 @@ background-color: #dfe3eb;
 	color: white;
 	display: flex;
 	justify-content: left;
+	align-items: center;
 }
 .theEnd1 ul{
 	top: 350px;
@@ -449,6 +597,23 @@ background-color: #dfe3eb;
 	display: flex;
 	justify-content: left;
 	width: 300px;
+}
+.backtop{
+	width: 40px;
+	height: 40px;
+	background: rgb(155, 138, 138);
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 30px;
+	left: 20px;
+	cursor: pointer;
+}
+html{
+	scroll-behavior: smooth;
 }
 
 /* .layer1{

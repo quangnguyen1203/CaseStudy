@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="1">
         <table>
             <tr>
                 <td style="text-align: left;"> <img src="images2/3-logo-thuong-hieu-elle-man-1020-wiki-768x768.png"
@@ -49,14 +49,76 @@
                 <input placeholder="Search" class="button">
             </div>
         </div>
-        <div class="slice">
+        <!-- <div class="slice">
             <img src="images2/image.jpg" width="1700px" alt="">
             <div class="left">
                 <h2><strong>JORDAN MA2</strong></h2>
                 <p>Step into air</p>
                 <button class="btn">Shop</button>
             </div>
-        </div>
+        </div> -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="header-slider-img" style="background-image: url(images2/header-slider/bg-1.jpg);"></div>
+              <!-- <img src="images2/image.jpg" style="width:100%"> -->
+              <!-- <div class="text">Caption Text</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+              <!-- <img src="images2/bia1.jpg" style="width:100%"> -->
+                <div class="header-slider-img" style="background-image: url(images2/header-slider/bg-2.jpg);"></div>
+
+              <!-- <div class="text">Caption Two</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+              <!-- <img src="images2/Sean-Wotherspoon-1.jpg" style="width:100%"> -->
+                <div class="header-slider-img" style="background-image: url(images2/header-slider/bg-3.jpg);"></div>
+
+              <!-- <div class="text">Caption Three</div> -->
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
         <div style="height: 50px;"></div>
         <div class="trending"><strong>Trending</strong></div>
         <div class="content">
@@ -97,6 +159,9 @@
                     <p>Men's Shoe</p>
                     <p class="gia">$120.<span>00</span></p>
                 </div>
+                <!-- <div class="mua">
+                    <button class="btnBuy">Buy now</button>
+                </div> -->
             </div>
             <div class="column">
                 <img src="images2/air-max-95-neon.jpg" alt="Mountains" style="width:100%">
@@ -104,7 +169,11 @@
                     <p>Nike Air Max 95 OG 'Neon Yellow'</p>
                     <p>Men's Shoe</p>
                     <p class="gia">$220.<span>00</span></p>
+                    
                 </div>
+                <!-- <div class="mua">
+                    <button class="btnBuy">Buy now</button>
+                </div> -->
             </div>
             <div class="column">
                 <img src="images2/air-max-1-x-clot-net-release-date.jpg" alt="Mountains" style="width:100%">
@@ -112,7 +181,11 @@
                     <p>Nike Air Max 1 x CLOT NET</p>
                     <p>Men's Shoe</p>
                     <p class="gia">$135.<span>00</span></p>
-                </div>  
+                    
+                </div>
+                <!-- <div class="mua">
+                    <button class="btnBuy">Buy now</button>
+                </div>   -->
             </div>
             <div class="column">
                 <img src="images2/air-max-90-bacon-release-date.jpg" alt="Mountains" style="width:100%">
@@ -120,15 +193,38 @@
                     <p>Nike Air Max 90 Bacon</p>
                     <p>Men's Shoe</p>
                     <p class="gia">$127.<span>00</span></p>
+                    
                 </div>
+                <!-- <div class="mua">
+                    <button class="btnBuy">Buy now</button>
+                </div> -->
             </div>
             <div class="column">
-                <img src="images2/air-max-97-se-shoe-PcDvfm (1).jpg" alt="Mountains" style="width:90%">
+                <img src="images2/air-max-97-se-shoe-PcDvfm.jpg" alt="Mountains" style="width:100%">
                 <div class="ten">
-                    <p>Nike Air Max 97 SE</p>
+                    <p>Nike Air Max 97 x UNDEFEATED White</p>
                     <p>Men's Shoe</p>
                     <p class="gia">$99.<span>00</span></p>
+                    
                 </div>
+                <!-- <div class="mua">
+                    <button class="btnBuy">Buy now</button>
+                </div> -->
+            </div>
+            <div class="mua">
+                <button class="btnBuy">Buy now</button>
+            </div>
+            <div class="mua">
+                <button class="btnBuy">Buy now</button>
+            </div>
+            <div class="mua">
+                <button class="btnBuy">Buy now</button>
+            </div>
+            <div class="mua">
+                <button class="btnBuy">Buy now</button>
+            </div>
+            <div class="mua">
+                <button class="btnBuy">Buy now</button>
             </div>
         </div>
         <div style="height: 50px;"></div>
@@ -288,7 +384,43 @@
             </div>
         </div>
     </div> 
-    
+    <a href="#1">
+        <div class="backtop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    </a
 </body>
-
+    <!-- <script>
+        function scrollFunction() {
+  if (
+    document.body.scrollTop > 450 ||
+    document.documentElement.scrollTop > 450
+  ) {
+    document.getElementById("backtop").style.display = "block";
+  } else {
+    document.getElementById("backtop").style.display = "none";
+  }
+}
+document.getElementById("backtop").addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+    </script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                    $('backtop').fadeIn();
+                } else {
+                    $('backtop').fadeOut();
+                }
+            });
+            $("backtop").click(function(){
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+        });
+    </script> -->
 </html>
