@@ -31,6 +31,9 @@ table  tr td {
 	cursor: pointer;
 
 }
+.swood {
+	cursor: pointer;
+}
 
 .account {
 	text-align: right;
@@ -240,6 +243,9 @@ background-color: #dfe3eb;
 .btn:hover{
 	background-color: #464444;
 }
+.btn:focus{
+	outline: none;
+}
 .trending{
 	text-align: left;
 	font-size: 50px;
@@ -373,6 +379,9 @@ background-color: #dfe3eb;
 .btnBuy:hover{
 	background-color: rgb(63, 60, 60);
 }
+.btnBuy:focus{
+	outline: none;
+}
 .morenike{
 	text-align: left;
 	font-size: 50px;
@@ -407,6 +416,9 @@ background-color: #dfe3eb;
 }
 .btn3:hover{
 	background-color: rgb(219, 213, 213);
+}
+.btn3:focus{
+	outline: none;
 }
 .dontmiss{
 	text-align: left;
@@ -451,6 +463,9 @@ background-color: #dfe3eb;
 	cursor: pointer;
 	border: none;
 	margin-top: 20px;
+}
+.btn4:focus{
+	outline: none;
 }
 .btn5{
 	padding: 15px 55px;
